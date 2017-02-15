@@ -1,4 +1,20 @@
 # depslib dependency file v1.0
-1487165097 source:c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\main.cpp
+1487168033 source:c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\main.cpp
+	<iostream>
+	<iomanip>
+	<cstdlib>
+	<cstdio>
+	"Employee.h"
+
+1487166866 source:c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\src\employee.cpp
+	"Employee.h"
+
+1487166814 c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\include\employee.h
+	<iostream>
+
+1487166359 source:c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\src\stock.cpp
+	"Stock.h"
+
+1487166343 c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\include\stock.h
 	<iostream>
 
