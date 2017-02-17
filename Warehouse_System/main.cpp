@@ -4,6 +4,7 @@
 #include <cstdio>
 
 #include "Employee.h"
+#include "Stock.h"
 
 using namespace std;
 
@@ -12,6 +13,7 @@ char userChoice;
 string userName;
 string userPass;
 
+Employee employee;
 
 void printMenu() {
 
@@ -31,6 +33,37 @@ void printMenu() {
 
         cout << "Please Enter Your Choice: ";
         cin >> userChoice;
+
+        switch(userChoice) {
+
+            case 'a':
+                    Stock().addNewStock();
+                    break;
+
+            case 'b': Stock().removeStock();
+                    break;
+
+            case 'c': Stock().editStock();
+                    break;
+
+            case 'd': Stock().searchStock();
+                    break;
+
+            case 'e': Stock().printDailyStockRep();
+                    break;
+
+            case 'f': Stock().printWeeklyStockRep();
+                    break;
+
+            case 'g': Stock().printMonthlyStockRep();
+                    break;
+
+            case 'h': Stock().printYearlyStockRep();
+                    break;
+
+            default:
+                    cout << "Please Enter A Valid Choice!\n";
+        }
     }
     while(userChoice != 'i');
 
@@ -41,10 +74,13 @@ void loginSys() {
     int counterNo = 3;
 
     do {
+        cout << "Name: ";
+        cin >> userName;
+
         cout << "Pass: ";
         cin >> userPass;
 
-        if(userPass == Employee().getPass()) {
+        if(userPass == employee.getPass() && userName == employee.getName()) {
            cout << "-----------------------------------------------------\n";
            cout << "Successfully Logged In\n";
            cout << "-----------------------------------------------------\n";

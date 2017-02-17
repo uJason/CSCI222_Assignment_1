@@ -16,6 +16,17 @@ class Stock
         float getItemCost();
         float getTotalAmt();
 
+        //Menu Functions
+        void printYearlyStockRep();
+        void printMonthlyStockRep();
+        void printWeeklyStockRep();
+        void printDailyStockRep();
+
+        void addNewStock();
+        void searchStock();
+        void removeStock();
+        void editStock();
+
     protected:
 
     private:

@@ -19,3 +19,11 @@ string Employee::getName() {
 string Employee::getPass() {
     return ePass;
 }
+
+void Employee::setName(string name) {
+    this->eName = name;
+}
+
+void Employee::setPass(string pass) {
+    this->ePass = pass;
+}

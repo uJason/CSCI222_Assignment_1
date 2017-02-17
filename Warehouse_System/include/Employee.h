@@ -11,11 +11,11 @@ class Employee
         Employee();
         virtual ~Employee();
 
-        void setName();
-        void setPass();
+        void setName(string);
+        void setPass(string);
 
-        string getName(string);
-        string getPass(string);
+        string getName();
+        string getPass();
 
 
         void loginSys();
