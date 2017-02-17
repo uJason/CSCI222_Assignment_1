@@ -1,11 +1,13 @@
 # depslib dependency file v1.0
-1487319978 source:c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\main.cpp
+1487342120 source:c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\main.cpp
 	<iostream>
 	<iomanip>
 	<cstdlib>
 	<cstdio>
 	"Employee.h"
 	"Stock.h"
+	"Transaction.h"
+	"SummaryReport.h"
 
 1487320006 source:c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\src\employee.cpp
 	"Employee.h"
@@ -13,9 +15,22 @@
 1487319978 c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\include\employee.h
 	<iostream>
 
-1487320096 source:c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\src\stock.cpp
+1487342121 source:c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\src\stock.cpp
 	"Stock.h"
 
-1487317991 c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\include\stock.h
+1487342033 c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\include\stock.h
 	<iostream>
+
+1487342246 c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\include\transaction.h
+	"Stock.h"
+
+1487342368 c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\include\summaryreport.h
+	"Stock.h"
+	<Time.h>
+
+1487342320 source:c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\src\summaryreport.cpp
+	"SummaryReport.h"
+
+1487342320 source:c:\users\jason\documents\github\csci222_assignment_1\warehouse_system\src\transaction.cpp
+	"Transaction.h"
 

@@ -11,17 +11,22 @@ class Stock
         Stock();
         virtual ~Stock();
         string getItemDesc();
-        int getStockIn();
-        int getStockOut();
         float getItemCost();
         float getTotalAmt();
+        string getItemCat();
+        string getItemSubCat();
+        int getThresHold();
 
-        //Menu Functions
-        void printYearlyStockRep();
-        void printMonthlyStockRep();
-        void printWeeklyStockRep();
-        void printDailyStockRep();
+        //Sorting Functions
+        void sortByID();
+        void sortByCat();
+        void sortBySubCat();
+        void sortByPriceRange();
+        void sortByQty();
+        void sortByAsc();
+        void sortByDesc();
 
+        void editThreshold();
         void addNewStock();
         void searchStock();
         void removeStock();
@@ -30,11 +35,15 @@ class Stock
     protected:
 
     private:
+        //Variables Declaration
+        int itemID;
         string itemDesc;
-        int stockIn;
-        int stockOut;
+        string itemCat;
+        string itemSubCat;
         float itemCost;
         float totalAmount;
+        int itemQty;
+        int thresHold;
 };
 
 #endif // STOCK_H

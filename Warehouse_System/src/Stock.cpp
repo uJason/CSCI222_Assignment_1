@@ -1,22 +1,20 @@
 #include "Stock.h"
 
-Stock::Stock()
-{
-    //ctor
+Stock::Stock() {
+    itemDesc = "";
+    itemCost = 0;
+    itemCat = "";
+    itemSubCat = "";
+    itemID = 1;
 }
 
-Stock::~Stock()
-{
+Stock::~Stock() {
     //dtor
 }
 
 
 string Stock::getItemDesc() {
     return itemDesc;
-}
-
-int Stock::getStockIn() {
-    return stockIn;
 }
 
 float Stock::getItemCost() {
@@ -27,33 +25,22 @@ float Stock::getTotalAmt() {
     return totalAmount;
 }
 
+string Stock::getItemCat() {
+    return itemCat;
+}
+
+string Stock::getItemSubCat() {
+    return itemSubCat;
+}
+
+int Stock::getThresHold() {
+    return thresHold;
+}
+
+
 void Stock::addNewStock() {
     cout << "-----------------------------------------------------\n";
     cout << "Add New Stock\n";
-    cout << "-----------------------------------------------------\n";
-}
-
-void Stock::printYearlyStockRep() {
-    cout << "-----------------------------------------------------\n";
-    cout << "Yearly Stock";
-    cout << "-----------------------------------------------------\n";
-}
-
-void Stock::printMonthlyStockRep() {
-    cout << "-----------------------------------------------------\n";
-    cout << "Monthly Stock\n";
-    cout << "-----------------------------------------------------\n";
-}
-
-void Stock::printWeeklyStockRep() {
-    cout << "-----------------------------------------------------\n";
-    cout << "Weekly Stock\n";
-    cout << "-----------------------------------------------------\n";
-}
-
-void Stock::printDailyStockRep() {
-    cout << "-----------------------------------------------------\n";
-    cout << " Daily Stock\n";
     cout << "-----------------------------------------------------\n";
 }
 
@@ -74,3 +61,33 @@ void Stock::editStock() {
     cout << "Edit Stock\n";
     cout << "-----------------------------------------------------\n";
 }
+
+/* Sorting Functions */
+void Stock::sortByAsc() {
+
+}
+
+void Stock::sortByCat() {
+
+}
+
+void Stock::sortByDesc() {
+
+}
+
+void Stock::sortBySubCat() {
+
+}
+
+void Stock::sortByID() {
+
+}
+
+void Stock::sortByPriceRange() {
+
+}
+
+void Stock::sortByQty() {
+
+}
+

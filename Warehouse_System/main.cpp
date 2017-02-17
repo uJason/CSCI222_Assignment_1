@@ -5,6 +5,8 @@
 
 #include "Employee.h"
 #include "Stock.h"
+#include "Transaction.h"
+#include "SummaryReport.h"
 
 using namespace std;
 
@@ -14,6 +16,9 @@ string userName;
 string userPass;
 
 Employee employee;
+Stock stock;
+Transaction transaction;
+SummaryReport summaryreport;
 
 void printMenu() {
 
@@ -49,16 +54,16 @@ void printMenu() {
             case 'd': Stock().searchStock();
                     break;
 
-            case 'e': Stock().printDailyStockRep();
+            case 'e': summaryreport.displayDaily();
                     break;
 
-            case 'f': Stock().printWeeklyStockRep();
+            case 'f': summaryreport.displayWeekly();
                     break;
 
-            case 'g': Stock().printMonthlyStockRep();
+            case 'g': summaryreport.displayMonthly();
                     break;
 
-            case 'h': Stock().printYearlyStockRep();
+            case 'h': summaryreport.displayYearly();
                     break;
 
             default:

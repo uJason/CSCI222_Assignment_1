@@ -36,9 +36,13 @@
 		</Compiler>
 		<Unit filename="include/Employee.h" />
 		<Unit filename="include/Stock.h" />
+		<Unit filename="include/SummaryReport.h" />
+		<Unit filename="include/Transaction.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Employee.cpp" />
 		<Unit filename="src/Stock.cpp" />
+		<Unit filename="src/SummaryReport.cpp" />
+		<Unit filename="src/Transaction.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
